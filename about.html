@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <title>University Website</title>
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="/images/eduford_img/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+  </section>
+
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We Are The World's Largest University</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ut aut recusandae dolorum, quo nam facilis blanditiis labore. Voluptate deleniti reiciendis architecto illum dolorem numquam quae quam qui eligendi sint repellendus, harum voluptates excepturi illo autem minima unde magnam, repellat facere praesentium quaerat nulla cupiditate animi saepe. Dolorum incidunt architecto enim eaque iste aliquid corporis.</p>
+        <a class="hero-btn red-btn" href="#">EXPOLRE NOW</a>
+      </div>
+      <div class="about-col">
+        <img src="/images/eduford_img/about.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum voluptatibus cumque unde, voluptate dolore placeat obcaecati ducimus <br> enim repellat veritatis nostrum necessitatibus nemo harum.</p>
+    <div class="icons">
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100087142730701"><i class="fab fa-facebook"></i></a>
+      <i class="fab fa-twitter"></i>
+      <a target="_blank" href="https://www.instagram.com/m.mansour_01"><i class="fab fa-instagram"></i></a>
+       <a target="_blank" href="https://www.linkedin.com/in/mohamed-mohamedali-87860b184/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> By Moha</p>
+  </section>
+</body>
+
+
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+</script>
+
+</html>
